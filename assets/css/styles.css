@@ -136,6 +136,12 @@ a {
   box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
   font-weight: var(--medium);
   font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background: #303cb8;
 }
 
 .hero__bg {
@@ -144,6 +150,9 @@ a {
 }
 
 /* Product Section */
+.product {
+  margin-bottom: 190px;
+}
 .product__text {
   text-align: center;
   max-width: 350px;
@@ -153,17 +162,14 @@ a {
   font-weight: var(--medium);
   line-height: 62px;
   font-size: 3rem;
-  margin: 5rem 0 1rem 0;
-}
-
-.product p {
-  color: var(--light-text);
+  font-weight: var(--bold);
+  margin: 5rem 0 2rem 0;
 }
 
 .product__image {
   text-align: center;
   width: 100%;
-  margin: 2rem 0;
+  margin: 2rem 0 6rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -173,13 +179,148 @@ a {
 .product__image--line {
   position: absolute;
   margin: 60px auto;
-  /* background-color: #02e4c0; */
 }
 
-.text__block {
-  max-width: 270px;
-  margin: 5rem auto 0 auto;
+.card__product {
+  max-width: 269px;
+  margin: 45px auto;
 }
-.text__block__title h3 {
+
+.text__product {
   display: flex;
+  align-items: flex-start;
+}
+
+.text__product img {
+  margin-right: 10px;
+}
+
+.text__product h3 {
+  font-weight: var(--medium);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Seccion comenzar */
+.comenzar__container {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.comenzar__container h2 {
+  font-weight: var(--light);
+  font-size: 42px;
+  margin-bottom: 1rem;
+}
+
+.comenzar__card {
+  background-color: var(--light-bg);
+  max-width: 330px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  padding: 40px 0 0 0;
+  margin-bottom: 25px;
+  color: var(--first-text);
+}
+
+.comenzar__card h3 {
+  font-weight: var(--medium);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.comenzar__card p {
+  margin-bottom: 60px;
+}
+
+.btn-card {
+  padding: 13px 45px;
+  background-color: var(--primary);
+  border: none;
+  margin-bottom: 40px;
+  color: var(--light-text);
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+  background: #303cb8;
+}
+
+.comenzar__card img {
+  margin: 0 auto;
+  max-width: 330px;
+}
+
+.mb-pro {
+  padding: 0 0 35px 0;
+}
+
+/*  Testimonios */
+
+.testimonios {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 350px;
+}
+.testimonios h2 {
+  text-align: center;
+  font-weight: var(--light);
+  font-size: 42px;
+}
+
+.card__testimonio {
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+.testimonio__title {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+  font-weight: var(--light);
+}
+
+/* Seccion Empeza */
+.empeza {
+  background-color: #1e1e1e;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.empeza h2 {
+  font-size: 42px;
+  font-weight: var(--light);
+  max-width: 220px;
+  margin: 0 auto 40px auto;
+  line-height: 50px;
+}
+
+/* Footer */
+.lista {
+  max-width: 250px;
+  margin: 70px auto;
+  /* padding: 0 40px; */
+  /* background-color: red; */
+}
+
+.lista p {
+  margin-bottom: 20px;
+}
+
+.lista img {
+  max-width: 25px;
+  margin-right: 10px;
+}
+
+.redes ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
